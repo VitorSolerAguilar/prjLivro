@@ -26,9 +26,10 @@ public class Livro {
     }
     
     public void emprestar(){
-        
+        this.situacao = true;
     }
     public double devolver(int diasAtraso){
-     return 0;   
+     this.situacao = false;
+     return this.valMultaDiaria * diasAtraso;   
     }
 }
